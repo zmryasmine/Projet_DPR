@@ -2,7 +2,9 @@
 
 
     <xsl:template match="/">
-        <site>
+        <site xmlns:xsi=
+                       "http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation="donnees_recettes_transform.xsd">
             <xsl:call-template name="liste-recettes"/>
             <xsl:call-template name="liste-ingredients"/>
             <xsl:call-template name="liste-auteurs"/>
@@ -25,28 +27,26 @@
                     <resume>
                         <xsl:value-of select="info[@nom='résumé']/*"/>
                     </resume>
-                    <ingredients>
-                        <xsl:for-each select="info[@nom='ingrédient']">
-                            <ref-ingredient>
-                                <xsl:attribute name="ref">
-                                    <xsl:value-of select="@value"/>
-                                </xsl:attribute>
-                                <xsl:attribute name="quantite">
-                                    <xsl:value-of select="@quantite"/>
-                                </xsl:attribute>
-                            </ref-ingredient>
-                        </xsl:for-each>
-                    </ingredients>
+                    <xsl:for-each select="info[@nom='ingrédient']">
+                        <ref-ingredient>
+                            <xsl:attribute name="ref">
+                                <xsl:value-of select="@value"/>
+                            </xsl:attribute>
+                            <xsl:attribute name="quantite">
+                                <xsl:value-of select="@quantite"/>
+                            </xsl:attribute>
+                        </ref-ingredient>
+                    </xsl:for-each>
                     <ref-souscategorie>
                         <xsl:attribute name="ref">
                             <xsl:value-of select="info[@nom='sous-catégorie']/@value"/>
                         </xsl:attribute>
                     </ref-souscategorie>
-                    <auteurs>
+                    <ref-auteur>
                         <xsl:attribute name="ref">
                             <xsl:value-of select="info[@nom='auteur']/@value"/>
                         </xsl:attribute>
-                    </auteurs>
+                    </ref-auteur>
                     <photo>
                         <xsl:value-of select="info[@nom='photo']/@value"/>
                     </photo>
@@ -100,15 +100,13 @@
                     <descriptif>
                         <xsl:copy-of select="info[@nom='descriptif']/*"/>
                     </descriptif>
-                    <recettes>
-                        <xsl:for-each select="info[@nom='recette']">
-                            <ref-recette>
-                                <xsl:attribute name="ref">
-                                    <xsl:value-of select="@value"/>
-                                </xsl:attribute>
-                            </ref-recette>
-                        </xsl:for-each>
-                    </recettes>
+                    <xsl:for-each select="info[@nom='recette']">
+                        <ref-recette>
+                            <xsl:attribute name="ref">
+                                <xsl:value-of select="@value"/>
+                            </xsl:attribute>
+                        </ref-recette>
+                    </xsl:for-each>
                 </ingredient>
             </xsl:for-each>
         </listes_ingredients>
@@ -140,15 +138,13 @@
                     <bio>
                         <xsl:value-of select="info[@nom='biographie']/*"/>
                     </bio>
-                    <recettes>
-                        <xsl:for-each select="info[@nom='recette']">
-                            <ref-recette>
-                                <xsl:attribute name="ref">
-                                    <xsl:value-of select="@value"/>
-                                </xsl:attribute>
-                            </ref-recette>
-                        </xsl:for-each>
-                    </recettes>
+                    <xsl:for-each select="info[@nom='recette']">
+                        <ref-recette>
+                            <xsl:attribute name="ref">
+                                <xsl:value-of select="@value"/>
+                            </xsl:attribute>
+                        </ref-recette>
+                    </xsl:for-each>
                 </auteur>
             </xsl:for-each>
         </auteurs>
@@ -202,15 +198,13 @@
                     <nom>
                         <xsl:value-of select="info[@nom='nom']/@value"/>
                     </nom>
-                    <ingredients>
-                        <xsl:for-each select="info[@nom='ingrédient']">
-                            <ref-ingredient>
-                                <xsl:attribute name="ref">
-                                    <xsl:value-of select="@value"/>
-                                </xsl:attribute>
-                            </ref-ingredient>
-                        </xsl:for-each>
-                    </ingredients>
+                    <xsl:for-each select="info[@nom='ingrédient']">
+                        <ref-ingredient>
+                            <xsl:attribute name="ref">
+                                <xsl:value-of select="@value"/>
+                            </xsl:attribute>
+                        </ref-ingredient>
+                    </xsl:for-each>
                 </produit>
             </xsl:for-each>
         </produits>

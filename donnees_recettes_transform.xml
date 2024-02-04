@@ -1,24 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?><site>
+<?xml version="1.0" encoding="UTF-8"?><site xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="donnees_recettes_transform.xsd">
     <recettes>
         <recette id="r2830">
             <nom>Cake à la tomate farcie</nom>
             <resume>
 				Cake à la tomate farcie - Recettes de cuisine Ôdélices
 			</resume>
-            <ingredients>
-                <ref-ingredient ref="F120" quantite="100g"/>
-                <ref-ingredient ref="L300" quantite="1 cuillère à café rase"/>
-                <ref-ingredient ref="L50" quantite="7,5 cl"/>
-                <ref-ingredient ref="O12" quantite="1"/>
-                <ref-ingredient ref="H20" quantite="1 cuillère à soupe"/>
-                <ref-ingredient ref="t142" quantite="1 petite boite "/>
-                <ref-ingredient ref="F10" quantite="30 g"/>
-                <ref-ingredient ref="t120" quantite="6 grappes"/>
-                <ref-ingredient ref="S12" quantite=""/>
-                <ref-ingredient ref="Po40" quantite=""/>
-            </ingredients>
+            <ref-ingredient ref="F120" quantite="100g"/>
+            <ref-ingredient ref="L300" quantite="1 cuillère à café rase"/>
+            <ref-ingredient ref="L50" quantite="7,5 cl"/>
+            <ref-ingredient ref="O12" quantite="1"/>
+            <ref-ingredient ref="H20" quantite="1 cuillère à soupe"/>
+            <ref-ingredient ref="t142" quantite="1 petite boite "/>
+            <ref-ingredient ref="F10" quantite="30 g"/>
+            <ref-ingredient ref="t120" quantite="6 grappes"/>
+            <ref-ingredient ref="S12" quantite=""/>
+            <ref-ingredient ref="Po40" quantite=""/>
             <ref-souscategorie ref="SC1"/>
-            <auteurs ref="AUT3"/>
+            <ref-auteur ref="AUT3"/>
             <photo>http://www.odelices.com/images/recettes/cake-a-la-tomate-farcie.jpg</photo>
             <date_publication>2011-04-24</date_publication>
             <difficulté>Très facile</difficulté>
@@ -53,17 +51,15 @@ Saler l'intérieur de chaque tomate et déposer sur un papier absorbant, elles v
             <resume>
 				 Petits cakes au chèvre frais et myrtilles - les meilleures recettes de cuisine d'Ôdélices
 			</resume>
-            <ingredients>
-                <ref-ingredient ref="F120" quantite="250 g"/>
-                <ref-ingredient ref="L50" quantite="15cl"/>
-                <ref-ingredient ref="O12" quantite="4"/>
-                <ref-ingredient ref="H20" quantite="5cl"/>
-                <ref-ingredient ref="FC20" quantite="2"/>
-                <ref-ingredient ref="B200" quantite="1/4 cuillerée à café"/>
-                <ref-ingredient ref="M110" quantite="100 g"/>
-            </ingredients>
+            <ref-ingredient ref="F120" quantite="250 g"/>
+            <ref-ingredient ref="L50" quantite="15cl"/>
+            <ref-ingredient ref="O12" quantite="4"/>
+            <ref-ingredient ref="H20" quantite="5cl"/>
+            <ref-ingredient ref="FC20" quantite="2"/>
+            <ref-ingredient ref="B200" quantite="1/4 cuillerée à café"/>
+            <ref-ingredient ref="M110" quantite="100 g"/>
             <ref-souscategorie ref="SC1"/>
-            <auteurs ref="AUT2"/>
+            <ref-auteur ref="AUT2"/>
             <photo>http://www.odelices.com/images/recettes/petits-cakes-au-chevre-frais-et-myrtilles.jpg</photo>
             <date_publication>2012-04-09</date_publication>
             <difficulté>Très facile</difficulté>
@@ -94,14 +90,12 @@ Saler l'intérieur de chaque tomate et déposer sur un papier absorbant, elles v
 				Pour un soir de semaine, si vous voulez faire une salade express mais épatante, faites de la mozzarella panée ! C'est rapide, facile et très syma !
 
 			</resume>
-            <ingredients>
-                <ref-ingredient ref="B10" quantite="2"/>
-                <ref-ingredient ref="O12" quantite="1"/>
-                <ref-ingredient ref="F120" quantite="4 cuillerées à soupe"/>
-                <ref-ingredient ref="CH12" quantite="1 petit bol"/>
-            </ingredients>
+            <ref-ingredient ref="B10" quantite="2"/>
+            <ref-ingredient ref="O12" quantite="1"/>
+            <ref-ingredient ref="F120" quantite="4 cuillerées à soupe"/>
+            <ref-ingredient ref="CH12" quantite="1 petit bol"/>
             <ref-souscategorie ref="SC2"/>
-            <auteurs ref="AUT1"/>
+            <ref-auteur ref="AUT1"/>
             <photo>http://www.odelices.com/images/recettes/mozzarella_panee.jpg</photo>
             <date_publication>2015-02-08</date_publication>
             <difficulté>Très facile</difficulté>
@@ -129,15 +123,13 @@ Saler l'intérieur de chaque tomate et déposer sur un papier absorbant, elles v
         <recette id="r3289">
             <nom>Oeuf cocotte aux marrons</nom>
             <resume/>
-            <ingredients>
-                <ref-ingredient ref="M9" quantite="200 g"/>
-                <ref-ingredient ref="O12" quantite="4"/>
-                <ref-ingredient ref="C50" quantite="4 cuillerées à soupe"/>
-                <ref-ingredient ref="S12" quantite=""/>
-                <ref-ingredient ref="Po40" quantite=""/>
-            </ingredients>
+            <ref-ingredient ref="M9" quantite="200 g"/>
+            <ref-ingredient ref="O12" quantite="4"/>
+            <ref-ingredient ref="C50" quantite="4 cuillerées à soupe"/>
+            <ref-ingredient ref="S12" quantite=""/>
+            <ref-ingredient ref="Po40" quantite=""/>
             <ref-souscategorie ref="SC2"/>
-            <auteurs ref="AUT1"/>
+            <ref-auteur ref="AUT1"/>
             <photo>http://www.odelices.com/images/recettes/oeuf_cocotte_aux_marrons.jpg</photo>
             <date_publication>2012-11-22</date_publication>
             <difficulté>Très facile</difficulté>
@@ -169,19 +161,17 @@ Saler l'intérieur de chaque tomate et déposer sur un papier absorbant, elles v
 
 Une salade « hébergée » dans une feuille d'endive ! Une idée gourmande qui ravira les plus jeunes qui pourront d'ailleurs vous aider à farcir les endives !
 			</resume>
-            <ingredients>
-                <ref-ingredient ref="e300" quantite="2"/>
-                <ref-ingredient ref="t120" quantite="2"/>
-                <ref-ingredient ref="Co30" quantite="6"/>
-                <ref-ingredient ref="C50" quantite="2 cuillerées à soupe"/>
-                <ref-ingredient ref="M80" quantite="2 cuillerées à soupe"/>
-                <ref-ingredient ref="CI10" quantite="50 g"/>
-                <ref-ingredient ref="t142" quantite="10 brins"/>
-                <ref-ingredient ref="S12" quantite=""/>
-                <ref-ingredient ref="Po40" quantite=""/>
-            </ingredients>
+            <ref-ingredient ref="e300" quantite="2"/>
+            <ref-ingredient ref="t120" quantite="2"/>
+            <ref-ingredient ref="Co30" quantite="6"/>
+            <ref-ingredient ref="C50" quantite="2 cuillerées à soupe"/>
+            <ref-ingredient ref="M80" quantite="2 cuillerées à soupe"/>
+            <ref-ingredient ref="CI10" quantite="50 g"/>
+            <ref-ingredient ref="t142" quantite="10 brins"/>
+            <ref-ingredient ref="S12" quantite=""/>
+            <ref-ingredient ref="Po40" quantite=""/>
             <ref-souscategorie ref="SC3"/>
-            <auteurs ref="AUT1"/>
+            <ref-auteur ref="AUT1"/>
             <photo>http://www.odelices.com/images/recettes/endives_farcies_au_thon1.jpg</photo>
             <date_publication>2015-03-12</date_publication>
             <difficulté>Très facile</difficulté>
@@ -211,18 +201,16 @@ Si vous passez par le nord, prenez le temps de déguster des frites savoureuses 
 Recettes extraites du livre Craquez pour la cuisine des chtis !
 
 			</resume>
-            <ingredients>
-                <ref-ingredient ref="MO7" quantite="2 à 3 litres"/>
-                <ref-ingredient ref="oi16" quantite="2"/>
-                <ref-ingredient ref="ech12" quantite="2"/>
-                <ref-ingredient ref="CE5" quantite="1"/>
-                <ref-ingredient ref="BEU1" quantite="20 g"/>
-                <ref-ingredient ref="pom06" quantite="1 kg"/>
-                <ref-ingredient ref="H20" quantite=""/>
-                <ref-ingredient ref="S12" quantite=""/>
-            </ingredients>
+            <ref-ingredient ref="MO7" quantite="2 à 3 litres"/>
+            <ref-ingredient ref="oi16" quantite="2"/>
+            <ref-ingredient ref="ech12" quantite="2"/>
+            <ref-ingredient ref="CE5" quantite="1"/>
+            <ref-ingredient ref="BEU1" quantite="20 g"/>
+            <ref-ingredient ref="pom06" quantite="1 kg"/>
+            <ref-ingredient ref="H20" quantite=""/>
+            <ref-ingredient ref="S12" quantite=""/>
             <ref-souscategorie ref="SC16"/>
-            <auteurs ref="AUT4"/>
+            <ref-auteur ref="AUT4"/>
             <photo>http://www.odelices.com/images/recettes/moules-frites.jpg</photo>
             <date_publication>2006-06-01</date_publication>
             <difficulté>Très facile</difficulté>
@@ -272,14 +260,12 @@ Pour la cuisson d'un gigot d'agneau, comptez environ 15 min par livre. Il sera r
 
 
 			</resume>
-            <ingredients>
-                <ref-ingredient ref="a117" quantite="1,5 kg"/>
-                <ref-ingredient ref="BEU1" quantite="20 g"/>
-                <ref-ingredient ref="S12" quantite=""/>
-                <ref-ingredient ref="Po40" quantite=""/>
-            </ingredients>
+            <ref-ingredient ref="a117" quantite="1,5 kg"/>
+            <ref-ingredient ref="BEU1" quantite="20 g"/>
+            <ref-ingredient ref="S12" quantite=""/>
+            <ref-ingredient ref="Po40" quantite=""/>
             <ref-souscategorie ref="SC5"/>
-            <auteurs ref="AUT1"/>
+            <ref-auteur ref="AUT1"/>
             <photo>http://www.odelices.com/images/recettes/gigot-d-agneau-au-cumin.jpg</photo>
             <date_publication>2009-02-09</date_publication>
             <difficulté>Très facile</difficulté>
@@ -310,15 +296,13 @@ Pour la cuisson d'un gigot d'agneau, comptez environ 15 min par livre. Il sera r
 Pour le repas de Pâques, j'aime beaucoup le traditionnel gigot d'agneau. C'est l'ami de ma soeur, qui a fait cette recette pour nous cette année. Le gigot était vraiment très parfumé et bien moelleux.
 
 			</resume>
-            <ingredients>
-                <ref-ingredient ref="a117" quantite="1,8 kg"/>
-                <ref-ingredient ref="M80" quantite="3 cuillères à soupe"/>
-                <ref-ingredient ref="H20" quantite="1 cuillère à soupe "/>
-                <ref-ingredient ref="S12" quantite=""/>
-                <ref-ingredient ref="Po40" quantite=""/>
-            </ingredients>
+            <ref-ingredient ref="a117" quantite="1,8 kg"/>
+            <ref-ingredient ref="M80" quantite="3 cuillères à soupe"/>
+            <ref-ingredient ref="H20" quantite="1 cuillère à soupe "/>
+            <ref-ingredient ref="S12" quantite=""/>
+            <ref-ingredient ref="Po40" quantite=""/>
             <ref-souscategorie ref="SC5"/>
-            <auteurs ref="AUT5"/>
+            <ref-auteur ref="AUT5"/>
             <photo>http://www.odelices.com/images/recettes/gigot-d-agneau-a-la-moutarde-et-au-thym-gousses-d-ail-confites.jpg</photo>
             <date_publication>2004-01-10</date_publication>
             <difficulté>Facile</difficulté>
@@ -361,16 +345,14 @@ Mon chéri adore la sauce teriyaki pour accompagner le saumon. Légèrement sucr
 
 
 			</resume>
-            <ingredients>
-                <ref-ingredient ref="s36" quantite="4 pavés"/>
-                <ref-ingredient ref="SO7" quantite="4 cuillères à soupe"/>
-                <ref-ingredient ref="V10" quantite="4 cuillères à soupe"/>
-                <ref-ingredient ref="VI2" quantite="12 cuillères à soupe "/>
-                <ref-ingredient ref="G63" quantite="1 cuillère à café"/>
-                <ref-ingredient ref="SU2" quantite="1 cuillère à café"/>
-            </ingredients>
+            <ref-ingredient ref="s36" quantite="4 pavés"/>
+            <ref-ingredient ref="SO7" quantite="4 cuillères à soupe"/>
+            <ref-ingredient ref="V10" quantite="4 cuillères à soupe"/>
+            <ref-ingredient ref="VI2" quantite="12 cuillères à soupe "/>
+            <ref-ingredient ref="G63" quantite="1 cuillère à café"/>
+            <ref-ingredient ref="SU2" quantite="1 cuillère à café"/>
             <ref-souscategorie ref="SC11"/>
-            <auteurs ref="AUT1"/>
+            <ref-auteur ref="AUT1"/>
             <photo>http://www.odelices.com/images/recettes/saumon-teriyaki.jpg</photo>
             <date_publication>2007-07-20</date_publication>
             <difficulté>Très Facile</difficulté>
@@ -403,18 +385,16 @@ Mon chéri adore la sauce teriyaki pour accompagner le saumon. Légèrement sucr
 Profitez d' une balade dans les bois pour ramasser quelques girolles et les cuisiner à la crème avec un beau pavé de saumon.
 
 			</resume>
-            <ingredients>
-                <ref-ingredient ref="s36" quantite="350 g"/>
-                <ref-ingredient ref="G15" quantite="150 g"/>
-                <ref-ingredient ref="C50" quantite="8 cl"/>
-                <ref-ingredient ref="V10" quantite="3 cl "/>
-                <ref-ingredient ref="G63" quantite="1 cuillère à café"/>
-                <ref-ingredient ref="ech12" quantite="une"/>
-                <ref-ingredient ref="S12" quantite=""/>
-                <ref-ingredient ref="Po40" quantite=""/>
-            </ingredients>
+            <ref-ingredient ref="s36" quantite="350 g"/>
+            <ref-ingredient ref="G15" quantite="150 g"/>
+            <ref-ingredient ref="C50" quantite="8 cl"/>
+            <ref-ingredient ref="V10" quantite="3 cl "/>
+            <ref-ingredient ref="G63" quantite="1 cuillère à café"/>
+            <ref-ingredient ref="ech12" quantite="une"/>
+            <ref-ingredient ref="S12" quantite=""/>
+            <ref-ingredient ref="Po40" quantite=""/>
             <ref-souscategorie ref="SC11"/>
-            <auteurs ref="AUT1"/>
+            <ref-auteur ref="AUT1"/>
             <photo>http://www.odelices.com/images/recettes/paves_de_saumon_aux_girolles.jpg</photo>
             <date_publication>2008-06-24</date_publication>
             <difficulté>Très Facile</difficulté>
@@ -453,15 +433,13 @@ Profitez d' une balade dans les bois pour ramasser quelques girolles et les cuis
 Donnez une touche d'originalité à vos moelleux au chocolat en remplaçant le beurre par de l'huile d'olive. Et pour une version sans lactose, utilisez de la crème végétale.
 
 			</resume>
-            <ingredients>
-                <ref-ingredient ref="ch115" quantite="70 g"/>
-                <ref-ingredient ref="O12" quantite="2 gros"/>
-                <ref-ingredient ref="C50" quantite="30 g"/>
-                <ref-ingredient ref="CA9" quantite="25 g"/>
-                <ref-ingredient ref="H20" quantite="2 cuillerées à soupe"/>
-            </ingredients>
+            <ref-ingredient ref="ch115" quantite="70 g"/>
+            <ref-ingredient ref="O12" quantite="2 gros"/>
+            <ref-ingredient ref="C50" quantite="30 g"/>
+            <ref-ingredient ref="CA9" quantite="25 g"/>
+            <ref-ingredient ref="H20" quantite="2 cuillerées à soupe"/>
             <ref-souscategorie ref="SC14"/>
-            <auteurs ref="AUT1"/>
+            <ref-auteur ref="AUT1"/>
             <photo>http://www.odelices.com/images/recettes/moelleux_au_chocolat_noir.jpg</photo>
             <date_publication>2015-04-17</date_publication>
             <difficulté>Très Facile</difficulté>
@@ -499,16 +477,14 @@ Donnez une touche d'originalité à vos moelleux au chocolat en remplaçant le b
 Pour le ou la faire craquer : un moelleux y a pas mieux !!! Pour être sûr de réussir votre coup, faites-les cuire dans de jolis ramequins et ne vous embêtez pas à les démouler. Dégustez-les à la cuillère, c' est aussi bon !
 
 			</resume>
-            <ingredients>
-                <ref-ingredient ref="ch115" quantite="40 g"/>
-                <ref-ingredient ref="BEU1" quantite="25 g"/>
-                <ref-ingredient ref="SU2" quantite="25 g"/>
-                <ref-ingredient ref="F120" quantite="5 g"/>
-                <ref-ingredient ref="O12" quantite="1 "/>
-                <ref-ingredient ref="fr12" quantite="60 g"/>
-            </ingredients>
+            <ref-ingredient ref="ch115" quantite="40 g"/>
+            <ref-ingredient ref="BEU1" quantite="25 g"/>
+            <ref-ingredient ref="SU2" quantite="25 g"/>
+            <ref-ingredient ref="F120" quantite="5 g"/>
+            <ref-ingredient ref="O12" quantite="1 "/>
+            <ref-ingredient ref="fr12" quantite="60 g"/>
             <ref-souscategorie ref="SC14"/>
-            <auteurs ref="AUT1"/>
+            <ref-auteur ref="AUT1"/>
             <photo>http://www.odelices.com/images/recettes/moelleux_au_chocolat_coeur_fondant_aux_framboises.jpg</photo>
             <date_publication>2005-06-27</date_publication>
             <difficulté>Facile</difficulté>
@@ -540,16 +516,14 @@ Pour le ou la faire craquer : un moelleux y a pas mieux !!! Pour être sûr de r
         <recette id="r2678">
             <nom>Moelleux au chocolat au coeur cerise</nom>
             <resume/>
-            <ingredients>
-                <ref-ingredient ref="ch115" quantite="40 g"/>
-                <ref-ingredient ref="BEU1" quantite="25 g"/>
-                <ref-ingredient ref="SU2" quantite="25 g"/>
-                <ref-ingredient ref="ce100" quantite="100 g"/>
-                <ref-ingredient ref="O12" quantite="1 de gros calibre"/>
-                <ref-ingredient ref="F120" quantite="15 g"/>
-            </ingredients>
+            <ref-ingredient ref="ch115" quantite="40 g"/>
+            <ref-ingredient ref="BEU1" quantite="25 g"/>
+            <ref-ingredient ref="SU2" quantite="25 g"/>
+            <ref-ingredient ref="ce100" quantite="100 g"/>
+            <ref-ingredient ref="O12" quantite="1 de gros calibre"/>
+            <ref-ingredient ref="F120" quantite="15 g"/>
             <ref-souscategorie ref="SC14"/>
-            <auteurs ref="AUT1"/>
+            <ref-auteur ref="AUT1"/>
             <photo>http://www.odelices.com/images/recettes/moelleux-au-chocolat-au-coeur-cerise.jpg</photo>
             <date_publication>2010-10-21</date_publication>
             <difficulté>Très Facile</difficulté>
@@ -643,10 +617,8 @@ La cuisson assèche considérablement les chairs, veillez à ne pas trop la prol
                     			
                 </p>
             </descriptif>
-            <recettes>
-                <ref-recette ref="r2830"/>
-                <ref-recette ref="r4315"/>
-            </recettes>
+            <ref-recette ref="r2830"/>
+            <ref-recette ref="r4315"/>
         </ingredient>
         <ingredient id="s36">
             <nom>saumon</nom>
@@ -705,10 +677,8 @@ Le saumon est l' un des poissons les plus consommés en France. Découvert cru p
                     			
                 </p>
             </descriptif>
-            <recettes>
-                <ref-recette ref="r1611"/>
-                <ref-recette ref="r1915"/>
-            </recettes>
+            <ref-recette ref="r1611"/>
+            <ref-recette ref="r1915"/>
         </ingredient>
         <ingredient id="ch115">
             <nom>Chocolat Noir</nom>
@@ -782,11 +752,9 @@ Tout ceci peut expliquer son action tonique sur l' organisme, à condition que l
                     			
                 </p>
             </descriptif>
-            <recettes>
-                <ref-recette ref="r4385"/>
-                <ref-recette ref="r957"/>
-                <ref-recette ref="r2678"/>
-            </recettes>
+            <ref-recette ref="r4385"/>
+            <ref-recette ref="r957"/>
+            <ref-recette ref="r2678"/>
         </ingredient>
         <ingredient id="a117">
             <nom>Agneau</nom>
@@ -815,10 +783,8 @@ Marinez les carrés dans une marinade de votre choix, recouvrez les os de papier
 
 			</p>
             </descriptif>
-            <recettes>
-                <ref-recette ref="r2101"/>
-                <ref-recette ref="r497"/>
-            </recettes>
+            <ref-recette ref="r2101"/>
+            <ref-recette ref="r497"/>
         </ingredient>
         <ingredient id="t120">
             <nom>Tomate</nom>
@@ -868,10 +834,8 @@ Délicieuses crues, en salade, sorbet ou gaspacho, vous pouvez aussi les cuire p
                     			
                 </p>
             </descriptif>
-            <recettes>
-                <ref-recette ref="r2830"/>
-                <ref-recette ref="r4315"/>
-            </recettes>
+            <ref-recette ref="r2830"/>
+            <ref-recette ref="r4315"/>
         </ingredient>
         <ingredient id="e300">
             <nom>Endive</nom>
@@ -898,9 +862,7 @@ Dans le bac à légumes du réfrigérateur, dans un torchon, il est conseillé d
                     			
                 </p>
             </descriptif>
-            <recettes>
-                <ref-recette ref="r4315"/>
-            </recettes>
+            <ref-recette ref="r4315"/>
         </ingredient>
         <ingredient id="oi16">
             <nom>Oignon</nom>
@@ -959,9 +921,7 @@ Légume d'accompagnement par excellence, on le retrouve dans de nombreuses recet
                     			
                 </p>
             </descriptif>
-            <recettes>
-                <ref-recette ref="r1241"/>
-            </recettes>
+            <ref-recette ref="r1241"/>
         </ingredient>
         <ingredient id="ech12">
             <nom>Echalotte</nom>
@@ -1018,10 +978,8 @@ Depuis longtemps, l'échalote permet l'élaboration de nombreuses sauces très c
                     			
                 </p>
             </descriptif>
-            <recettes>
-                <ref-recette ref="r1241"/>
-                <ref-recette ref="r1915"/>
-            </recettes>
+            <ref-recette ref="r1241"/>
+            <ref-recette ref="r1915"/>
         </ingredient>
         <ingredient id="pom06">
             <nom>Pommes de terre</nom>
@@ -1080,9 +1038,7 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
                     			
                 </p>
             </descriptif>
-            <recettes>
-                <ref-recette ref="r1241"/>
-            </recettes>
+            <ref-recette ref="r1241"/>
         </ingredient>
         <ingredient id="B10">
             <nom>boules de mozzarella de bufflone</nom>
@@ -1105,9 +1061,7 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
                     			
                 </p>
             </descriptif>
-            <recettes>
-                <ref-recette ref="r4275"/>
-            </recettes>
+            <ref-recette ref="r4275"/>
         </ingredient>
         <ingredient id="S12">
             <nom>sel</nom>
@@ -1115,15 +1069,13 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r2830"/>
-                <ref-recette ref="r3289"/>
-                <ref-recette ref="r4315"/>
-                <ref-recette ref="r1241"/>
-                <ref-recette ref="r2101"/>
-                <ref-recette ref="r497"/>
-                <ref-recette ref="r1915"/>
-            </recettes>
+            <ref-recette ref="r2830"/>
+            <ref-recette ref="r3289"/>
+            <ref-recette ref="r4315"/>
+            <ref-recette ref="r1241"/>
+            <ref-recette ref="r2101"/>
+            <ref-recette ref="r497"/>
+            <ref-recette ref="r1915"/>
         </ingredient>
         <ingredient id="SU2">
             <nom>sucre</nom>
@@ -1131,11 +1083,9 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r1611"/>
-                <ref-recette ref="r957"/>
-                <ref-recette ref="r2678"/>
-            </recettes>
+            <ref-recette ref="r1611"/>
+            <ref-recette ref="r957"/>
+            <ref-recette ref="r2678"/>
         </ingredient>
         <ingredient id="SO7">
             <nom>sauce soja</nom>
@@ -1143,9 +1093,7 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r1611"/>
-            </recettes>
+            <ref-recette ref="r1611"/>
         </ingredient>
         <ingredient id="V10">
             <nom>vin blanc</nom>
@@ -1153,10 +1101,8 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r1611"/>
-                <ref-recette ref="r1915"/>
-            </recettes>
+            <ref-recette ref="r1611"/>
+            <ref-recette ref="r1915"/>
         </ingredient>
         <ingredient id="G63">
             <nom>gingembre</nom>
@@ -1164,10 +1110,8 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r1611"/>
-                <ref-recette ref="r1915"/>
-            </recettes>
+            <ref-recette ref="r1611"/>
+            <ref-recette ref="r1915"/>
         </ingredient>
         <ingredient id="VI2">
             <nom>vinaigre blanc</nom>
@@ -1175,9 +1119,7 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r1611"/>
-            </recettes>
+            <ref-recette ref="r1611"/>
         </ingredient>
         <ingredient id="BEU1">
             <nom>beurre</nom>
@@ -1185,12 +1127,10 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r1241"/>
-                <ref-recette ref="r2101"/>
-                <ref-recette ref="r957"/>
-                <ref-recette ref="r2678"/>
-            </recettes>
+            <ref-recette ref="r1241"/>
+            <ref-recette ref="r2101"/>
+            <ref-recette ref="r957"/>
+            <ref-recette ref="r2678"/>
         </ingredient>
         <ingredient id="Po40">
             <nom>poivre</nom>
@@ -1198,14 +1138,12 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r2830"/>
-                <ref-recette ref="r3289"/>
-                <ref-recette ref="r4315"/>
-                <ref-recette ref="r2101"/>
-                <ref-recette ref="r497"/>
-                <ref-recette ref="r1915"/>
-            </recettes>
+            <ref-recette ref="r2830"/>
+            <ref-recette ref="r3289"/>
+            <ref-recette ref="r4315"/>
+            <ref-recette ref="r2101"/>
+            <ref-recette ref="r497"/>
+            <ref-recette ref="r1915"/>
         </ingredient>
         <ingredient id="CH12">
             <nom>chapelure</nom>
@@ -1213,9 +1151,7 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r4275"/>
-            </recettes>
+            <ref-recette ref="r4275"/>
         </ingredient>
         <ingredient id="M80">
             <nom>moutarde</nom>
@@ -1223,10 +1159,8 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r4315"/>
-                <ref-recette ref="r497"/>
-            </recettes>
+            <ref-recette ref="r4315"/>
+            <ref-recette ref="r497"/>
         </ingredient>
         <ingredient id="C50">
             <nom>crème</nom>
@@ -1234,12 +1168,10 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r3289"/>
-                <ref-recette ref="r4315"/>
-                <ref-recette ref="r1915"/>
-                <ref-recette ref="r4385"/>
-            </recettes>
+            <ref-recette ref="r3289"/>
+            <ref-recette ref="r4315"/>
+            <ref-recette ref="r1915"/>
+            <ref-recette ref="r4385"/>
         </ingredient>
         <ingredient id="Co30">
             <nom>cornichons</nom>
@@ -1247,9 +1179,7 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r4315"/>
-            </recettes>
+            <ref-recette ref="r4315"/>
         </ingredient>
         <ingredient id="CA9">
             <nom>cacao</nom>
@@ -1257,9 +1187,7 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r4385"/>
-            </recettes>
+            <ref-recette ref="r4385"/>
         </ingredient>
         <ingredient id="M9">
             <nom>marrons</nom>
@@ -1267,9 +1195,7 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r3289"/>
-            </recettes>
+            <ref-recette ref="r3289"/>
         </ingredient>
         <ingredient id="M110">
             <nom>myrtilles</nom>
@@ -1281,9 +1207,7 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
 			La myrtille est un petit fruit rond, de couleur bleuâtre à noire, avec de nombreuses graines 
 			</p>
             </descriptif>
-            <recettes>
-                <ref-recette ref="r3136"/>
-            </recettes>
+            <ref-recette ref="r3136"/>
         </ingredient>
         <ingredient id="B200">
             <nom>bicarbonate de sodium</nom>
@@ -1291,9 +1215,7 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r3136"/>
-            </recettes>
+            <ref-recette ref="r3136"/>
         </ingredient>
         <ingredient id="L300">
             <nom>levure chimique</nom>
@@ -1301,9 +1223,7 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r2830"/>
-            </recettes>
+            <ref-recette ref="r2830"/>
         </ingredient>
         <ingredient id="L50">
             <nom>lait</nom>
@@ -1311,10 +1231,8 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r2830"/>
-                <ref-recette ref="r3136"/>
-            </recettes>
+            <ref-recette ref="r2830"/>
+            <ref-recette ref="r3136"/>
         </ingredient>
         <ingredient id="O12">
             <nom>oeuf</nom>
@@ -1322,15 +1240,13 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r2830"/>
-                <ref-recette ref="r3136"/>
-                <ref-recette ref="r4275"/>
-                <ref-recette ref="r3289"/>
-                <ref-recette ref="r4385"/>
-                <ref-recette ref="r957"/>
-                <ref-recette ref="r2678"/>
-            </recettes>
+            <ref-recette ref="r2830"/>
+            <ref-recette ref="r3136"/>
+            <ref-recette ref="r4275"/>
+            <ref-recette ref="r3289"/>
+            <ref-recette ref="r4385"/>
+            <ref-recette ref="r957"/>
+            <ref-recette ref="r2678"/>
         </ingredient>
         <ingredient id="H20">
             <nom>huile d'olive</nom>
@@ -1338,13 +1254,11 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r2830"/>
-                <ref-recette ref="r3136"/>
-                <ref-recette ref="r1241"/>
-                <ref-recette ref="r497"/>
-                <ref-recette ref="r4385"/>
-            </recettes>
+            <ref-recette ref="r2830"/>
+            <ref-recette ref="r3136"/>
+            <ref-recette ref="r1241"/>
+            <ref-recette ref="r497"/>
+            <ref-recette ref="r4385"/>
         </ingredient>
         <ingredient id="F120">
             <nom>farine</nom>
@@ -1352,13 +1266,11 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r3136"/>
-                <ref-recette ref="r2830"/>
-                <ref-recette ref="r4275"/>
-                <ref-recette ref="r957"/>
-                <ref-recette ref="r2678"/>
-            </recettes>
+            <ref-recette ref="r3136"/>
+            <ref-recette ref="r2830"/>
+            <ref-recette ref="r4275"/>
+            <ref-recette ref="r957"/>
+            <ref-recette ref="r2678"/>
         </ingredient>
         <ingredient id="F10">
             <nom>fromage de brebis</nom>
@@ -1366,9 +1278,7 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r2830"/>
-            </recettes>
+            <ref-recette ref="r2830"/>
         </ingredient>
         <ingredient id="FC20">
             <nom>fromage de chèvre</nom>
@@ -1376,9 +1286,7 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r3136"/>
-            </recettes>
+            <ref-recette ref="r3136"/>
         </ingredient>
         <ingredient id="CE5">
             <nom>céleri</nom>
@@ -1386,9 +1294,7 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r1241"/>
-            </recettes>
+            <ref-recette ref="r1241"/>
         </ingredient>
         <ingredient id="G15">
             <nom>girolles</nom>
@@ -1396,9 +1302,7 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r1915"/>
-            </recettes>
+            <ref-recette ref="r1915"/>
         </ingredient>
         <ingredient id="CI10">
             <nom>ciboulette</nom>
@@ -1406,9 +1310,7 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r4315"/>
-            </recettes>
+            <ref-recette ref="r4315"/>
         </ingredient>
         <ingredient id="MO7">
             <nom>moules</nom>
@@ -1416,9 +1318,7 @@ Il est indispensable de cuire les pommes de terre, quelque soit la technique uti
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref="r1241"/>
-            </recettes>
+            <ref-recette ref="r1241"/>
         </ingredient>
         <ingredient id="ce100">
             <nom>Cerises</nom>
@@ -1469,9 +1369,7 @@ Retrouvez la cerises dans le célèbre clafoutis du Limousin (avec ou sans les n
                     			
                 </p>
             </descriptif>
-            <recettes>
-                <ref-recette ref="r2678"/>
-            </recettes>
+            <ref-recette ref="r2678"/>
         </ingredient>
         <ingredient id="fr12">
             <nom>Framboise</nom>
@@ -1520,9 +1418,7 @@ Rien n'est meilleur qu'un petit bol de framboises fraîches. Si besoin, ajoutez 
                     			
                 </p>
             </descriptif>
-            <recettes>
-                <ref-recette ref="r957"/>
-            </recettes>
+            <ref-recette ref="r957"/>
         </ingredient>
     </listes_ingredients>
     <auteurs>
@@ -1533,17 +1429,15 @@ Rien n'est meilleur qu'un petit bol de framboises fraîches. Si besoin, ajoutez 
             <pays>France</pays>
             <genre>Femme</genre>
             <bio/>
-            <recettes>
-                <ref-recette ref="r4275"/>
-                <ref-recette ref="r3289"/>
-                <ref-recette ref="r4315"/>
-                <ref-recette ref="r2101"/>
-                <ref-recette ref="r1611"/>
-                <ref-recette ref="r1915"/>
-                <ref-recette ref="r4385"/>
-                <ref-recette ref="r957"/>
-                <ref-recette ref="r2678"/>
-            </recettes>
+            <ref-recette ref="r4275"/>
+            <ref-recette ref="r3289"/>
+            <ref-recette ref="r4315"/>
+            <ref-recette ref="r2101"/>
+            <ref-recette ref="r1611"/>
+            <ref-recette ref="r1915"/>
+            <ref-recette ref="r4385"/>
+            <ref-recette ref="r957"/>
+            <ref-recette ref="r2678"/>
         </auteur>
         <auteur id="AUT2">
             <nom/>
@@ -1552,9 +1446,7 @@ Rien n'est meilleur qu'un petit bol de framboises fraîches. Si besoin, ajoutez 
             <pays>France</pays>
             <genre>Homme</genre>
             <bio/>
-            <recettes>
-                <ref-recette ref="r3136"/>
-            </recettes>
+            <ref-recette ref="r3136"/>
         </auteur>
         <auteur id="AUT3">
             <nom/>
@@ -1563,9 +1455,7 @@ Rien n'est meilleur qu'un petit bol de framboises fraîches. Si besoin, ajoutez 
             <pays>France</pays>
             <genre>Femme</genre>
             <bio/>
-            <recettes>
-                <ref-recette ref="r2830"/>
-            </recettes>
+            <ref-recette ref="r2830"/>
         </auteur>
         <auteur id="AUT4">
             <nom>Descamps</nom>
@@ -1574,9 +1464,7 @@ Rien n'est meilleur qu'un petit bol de framboises fraîches. Si besoin, ajoutez 
             <pays>France</pays>
             <genre>Femme</genre>
             <bio/>
-            <recettes>
-                <ref-recette ref="r1241"/>
-            </recettes>
+            <ref-recette ref="r1241"/>
         </auteur>
         <auteur id="AUT5">
             <nom/>
@@ -1585,9 +1473,7 @@ Rien n'est meilleur qu'un petit bol de framboises fraîches. Si besoin, ajoutez 
             <pays>France</pays>
             <genre>Femme</genre>
             <bio/>
-            <recettes>
-                <ref-recette ref="r497"/>
-            </recettes>
+            <ref-recette ref="r497"/>
         </auteur>
     </auteurs>
     <categories>
@@ -1783,77 +1669,63 @@ Comment aimez-vous le cabillaud ? Poché, en papillotes, au curry, en tajine, ta
     <produits>
         <produit id="P7904">
             <nom>Fruits</nom>
-            <ingredients>
-                <ref-ingredient ref="ce100"/>
-                <ref-ingredient ref="fr12"/>
-                <ref-ingredient ref="M110"/>
-            </ingredients>
+            <ref-ingredient ref="ce100"/>
+            <ref-ingredient ref="fr12"/>
+            <ref-ingredient ref="M110"/>
         </produit>
         <produit id="P7914">
             <nom>legumes</nom>
-            <ingredients>
-                <ref-ingredient ref="e300"/>
-                <ref-ingredient ref="oi16"/>
-                <ref-ingredient ref="ech12"/>
-                <ref-ingredient ref="t120"/>
-                <ref-ingredient ref="CE5"/>
-                <ref-ingredient ref="CI10"/>
-                <ref-ingredient ref="G15"/>
-            </ingredients>
+            <ref-ingredient ref="e300"/>
+            <ref-ingredient ref="oi16"/>
+            <ref-ingredient ref="ech12"/>
+            <ref-ingredient ref="t120"/>
+            <ref-ingredient ref="CE5"/>
+            <ref-ingredient ref="CI10"/>
+            <ref-ingredient ref="G15"/>
         </produit>
         <produit id="P7909">
             <nom>viandes</nom>
-            <ingredients>
-                <ref-ingredient ref="a117"/>
-            </ingredients>
+            <ref-ingredient ref="a117"/>
         </produit>
         <produit id="P7919">
             <nom>poissons</nom>
-            <ingredients>
-                <ref-ingredient ref="t142"/>
-                <ref-ingredient ref="s36"/>
-                <ref-ingredient ref="MO7"/>
-            </ingredients>
+            <ref-ingredient ref="t142"/>
+            <ref-ingredient ref="s36"/>
+            <ref-ingredient ref="MO7"/>
         </produit>
         <produit id="P7924">
             <nom>Féculents</nom>
-            <ingredients>
-                <ref-ingredient ref="pom06"/>
-            </ingredients>
+            <ref-ingredient ref="pom06"/>
         </produit>
         <produit id="P10274">
             <nom>Fromages</nom>
-            <ingredients>
-                <ref-ingredient ref="B10"/>
-                <ref-ingredient ref="F10"/>
-                <ref-ingredient ref="FC20"/>
-            </ingredients>
+            <ref-ingredient ref="B10"/>
+            <ref-ingredient ref="F10"/>
+            <ref-ingredient ref="FC20"/>
         </produit>
         <produit id="P7927">
             <nom>Autres</nom>
-            <ingredients>
-                <ref-ingredient ref="ch115"/>
-                <ref-ingredient ref="B200"/>
-                <ref-ingredient ref="F120"/>
-                <ref-ingredient ref="L300"/>
-                <ref-ingredient ref="L50"/>
-                <ref-ingredient ref="O12"/>
-                <ref-ingredient ref="H20"/>
-                <ref-ingredient ref="S12"/>
-                <ref-ingredient ref="Po40"/>
-                <ref-ingredient ref="CH12"/>
-                <ref-ingredient ref="M9"/>
-                <ref-ingredient ref="C50"/>
-                <ref-ingredient ref="Co30"/>
-                <ref-ingredient ref="M80"/>
-                <ref-ingredient ref="BEU1"/>
-                <ref-ingredient ref="SU2"/>
-                <ref-ingredient ref="SO7"/>
-                <ref-ingredient ref="V10"/>
-                <ref-ingredient ref="VI2"/>
-                <ref-ingredient ref="G63"/>
-                <ref-ingredient ref="CA9"/>
-            </ingredients>
+            <ref-ingredient ref="ch115"/>
+            <ref-ingredient ref="B200"/>
+            <ref-ingredient ref="F120"/>
+            <ref-ingredient ref="L300"/>
+            <ref-ingredient ref="L50"/>
+            <ref-ingredient ref="O12"/>
+            <ref-ingredient ref="H20"/>
+            <ref-ingredient ref="S12"/>
+            <ref-ingredient ref="Po40"/>
+            <ref-ingredient ref="CH12"/>
+            <ref-ingredient ref="M9"/>
+            <ref-ingredient ref="C50"/>
+            <ref-ingredient ref="Co30"/>
+            <ref-ingredient ref="M80"/>
+            <ref-ingredient ref="BEU1"/>
+            <ref-ingredient ref="SU2"/>
+            <ref-ingredient ref="SO7"/>
+            <ref-ingredient ref="V10"/>
+            <ref-ingredient ref="VI2"/>
+            <ref-ingredient ref="G63"/>
+            <ref-ingredient ref="CA9"/>
         </produit>
     </produits>
 </site>
