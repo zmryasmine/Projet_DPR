@@ -30,10 +30,9 @@
                     </h2>
                     <strong>Les ingrédients :</strong>
                     <ul>
-                        <xsl:for-each select="ingredients/ref-ingredient">
+                        <xsl:for-each select="ref-ingredient">
                             <xsl:variable name="id_ingredient" select="@ref"/>
                             <li>
-                                <xsl:value-of select="@quantite"/>
                                 <a href="Ingredients.html#{$id_ingredient}">
                                     <xsl:value-of select="ancestor::node()/listes_ingredients/ingredient[@id=$id_ingredient]/nom/text()"/>
                                 </a>

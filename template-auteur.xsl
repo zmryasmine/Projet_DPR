@@ -42,7 +42,7 @@
 
                     <ul>
 
-                        <xsl:for-each-group select="recettes/ref-recette" group-by="@ref">
+                        <xsl:for-each-group select="ref-recette" group-by="@ref">
                             <xsl:variable name="id_recette" select="@ref"/>
 
                             <li>

@@ -31,7 +31,7 @@
                     <p>
                         <strong>Auteur</strong>
                         <ul>
-                            <xsl:for-each select="auteurs">
+                            <xsl:for-each select="ref-auteur">
                                 <xsl:variable name="id_auteur" select="@ref"/>
                                 <li>
                                     <a href="Auteurs.html#{$id_auteur}">
@@ -74,7 +74,7 @@
                     <p>
                         <strong>Les ingrédients :</strong>
                         <ul>
-                            <xsl:for-each select="ingredients/ref-ingredient">
+                            <xsl:for-each select="ref-ingredient">
                                 <xsl:variable name="id_ingredient" select="@ref"/>
                                 <li>
                                     <xsl:value-of select="@quantite"/>

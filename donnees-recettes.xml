@@ -207,7 +207,7 @@
 			</p>
 		</info>
 	</objet>
-	<éobjet id="SC1" type="sous-catégorie">
+	<objet id="SC1" type="sous-catégorie">
 		<info nom="nom" value="Cakes"/>
 		<info nom="nom-court" value="Cakes"/>
 		<info nom="descriptif">
@@ -216,7 +216,7 @@
 			</p>
 		</info>
 		<info nom="catégorie" value="C1"/>
-	</éobjet>
+	</objet>
 	<objet id="SC2" type="sous-catégorie">
 		<info nom="nom" value="entrées-chaudes"/>
 		<info nom="nom-court" value="entrées-chaudes"/>

@@ -65,6 +65,7 @@
         <xsl:result-document href="Categories.html" format="my-output">
             <html>
                 <body>
+                    <xsl:call-template name="menu"/>
                     <xsl:call-template name="liste-des-categories"/>
                     <xsl:call-template name="fiche-des-categories"/>
                 </body>

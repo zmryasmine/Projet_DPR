@@ -13,14 +13,55 @@
             </xs:sequence>
             <xs:attribute ref="xsi:noNamespaceSchemaLocation" use="required"/>
         </xs:complexType>
+        <xs:keyref name="refRecetteKeyRef" refer="recetteKey">
+            <xs:selector xpath="auteurs/auteur/ref-recette"/>
+            <xs:field xpath="@ref"/>
+        </xs:keyref>
+        <xs:keyref name="refIngredientRecetteKeyRef" refer="ingredientKey">
+            <xs:selector xpath="recettes/recette/ref-ingredient"/>
+            <xs:field xpath="@ref"/>
+        </xs:keyref>
+        <xs:keyref name="refIngredientProduitKeyRef" refer="ingredientKey">
+            <xs:selector xpath="produits/produit/ref-ingredient"/>
+            <xs:field xpath="@ref"/>
+        </xs:keyref>
+        <xs:keyref name="refAuteurKeyRef" refer="auteurKey">
+            <xs:selector xpath="recettes/recette/ref-auteur"/>
+            <xs:field xpath="@ref"/>
+        </xs:keyref>
+        <xs:keyref name="refCategorieKeyRef" refer="categorieKey">
+            <xs:selector xpath="sous-categories/sous-categorie/ref-categorie"/>
+            <xs:field xpath="@ref"/>
+        </xs:keyref>
+        <xs:keyref name="refSousCategorieKeyRef" refer="souscategorieKey">
+            <xs:selector xpath="recettes/recette/ref-souscategorie"/>
+            <xs:field xpath="@ref"/>
+        </xs:keyref>
+        <xs:keyref name="refProduitIngredientKeyRef" refer="ingredientKey">
+            <xs:selector xpath="produits/produit/ref-ingredient"/>
+            <xs:field xpath="@ref"/>
+        </xs:keyref>
     </xs:element>
+    <!--<xs:element name="recettes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="recette"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>-->
+
     <xs:element name="recettes">
         <xs:complexType>
             <xs:sequence>
                 <xs:element maxOccurs="unbounded" ref="recette"/>
             </xs:sequence>
         </xs:complexType>
+        <xs:key name="recetteKey">
+            <xs:selector xpath="recette"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
     </xs:element>
+
     <xs:element name="recette">
         <xs:complexType>
             <xs:sequence>
@@ -43,7 +84,6 @@
         </xs:complexType>
     </xs:element>
     <xs:element name="resume" type="xs:string"/>
-
     <xs:element name="photo" type="xs:anyURI"/>
     <xs:element name="date_publication" type="xs:NMTOKEN"/>
     <xs:element name="difficulté" type="xs:string"/>
@@ -51,6 +91,7 @@
     <xs:element name="temps_prep" type="xs:NMTOKEN"/>
     <xs:element name="temps_cuisson" type="xs:string"/>
     <xs:element name="temps_repos" type="xs:string"/>
+
     <xs:element name="preparation">
         <xs:complexType>
             <xs:sequence>
@@ -58,14 +99,21 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
     <xs:element name="note" type="xs:string"/>
+
     <xs:element name="listes_ingredients">
         <xs:complexType>
             <xs:sequence>
                 <xs:element maxOccurs="unbounded" ref="ingredient"/>
             </xs:sequence>
         </xs:complexType>
+        <xs:key name="ingredientKey">
+            <xs:selector xpath="ingredient"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
     </xs:element>
+
     <xs:element name="ingredient">
         <xs:complexType>
             <xs:sequence>
@@ -79,16 +127,23 @@
             <xs:attribute name="id" use="required" type="xs:NCName"/>
         </xs:complexType>
     </xs:element>
+
     <xs:element name="apport_energetique" type="xs:string"/>
     <xs:element name="apport_nutritif" type="xs:string"/>
     <xs:element name="saison" type="xs:string"/>
+
     <xs:element name="auteurs">
         <xs:complexType>
             <xs:sequence>
                 <xs:element maxOccurs="unbounded" ref="auteur"/>
             </xs:sequence>
         </xs:complexType>
+        <xs:key name="auteurKey">
+            <xs:selector xpath="auteur"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
     </xs:element>
+
     <xs:element name="auteur">
         <xs:complexType>
             <xs:sequence>
@@ -118,6 +173,10 @@
                 <xs:element maxOccurs="unbounded" name="categorie" type="CategorieType"/>
             </xs:sequence>
         </xs:complexType>
+        <xs:key name="categorieKey">
+            <xs:selector xpath="categorie"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
     </xs:element>
 
     <xs:element name="sous-categories">
@@ -126,6 +185,10 @@
                 <xs:element maxOccurs="unbounded" name="sous-categorie" type="SousCategorieType"/>
             </xs:sequence>
         </xs:complexType>
+        <xs:key name="souscategorieKey">
+            <xs:selector xpath="sous-categorie"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
     </xs:element>
 
     <xs:element name="produits">
