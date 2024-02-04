@@ -14,6 +14,8 @@
         </site>
     </xsl:template>
 
+
+
     <xsl:template name="liste-recettes">
         <recettes>
             <xsl:for-each select="//objet[@type = 'recette']">
@@ -78,6 +80,7 @@
             </xsl:for-each>
         </recettes>
     </xsl:template>
+
     <xsl:template name="liste-ingredients">
         <listes_ingredients>
             <xsl:for-each select="//objet[@type = 'ingrédient']">
@@ -111,6 +114,7 @@
             </xsl:for-each>
         </listes_ingredients>
     </xsl:template>
+
     <xsl:template name="liste-auteurs">
         <auteurs>
             <xsl:for-each select="//objet[@type = 'auteur']">
@@ -149,6 +153,7 @@
             </xsl:for-each>
         </auteurs>
     </xsl:template>
+
     <xsl:template name="liste-categories">
         <categories>
             <xsl:for-each select="//objet[@type = 'catégorie']">
@@ -166,6 +171,7 @@
             </xsl:for-each>
         </categories>
     </xsl:template>
+
     <xsl:template name="liste-sous-categories">
         <sous-categories>
             <xsl:for-each select="//objet[@type = 'sous-catégorie']">
@@ -188,6 +194,7 @@
             </xsl:for-each>
         </sous-categories>
     </xsl:template>
+
     <xsl:template name="liste-produits">
         <produits>
             <xsl:for-each select="//objet[@type = 'produit']">

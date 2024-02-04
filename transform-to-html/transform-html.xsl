@@ -12,7 +12,7 @@
 
     <xsl:template match="/">
         <!-- Appel aux différents templates pour produire les fichiers de sortie -->
-        <xsl:result-document href="index.html" format="my-output">
+        <xsl:result-document href="pages_HTML/index.html" format="my-output">
             <html>
                 <body>
                     <h1>Bienvenue sur le site de recettes de cuisine</h1>
@@ -21,7 +21,7 @@
             </html>
         </xsl:result-document>
 
-        <xsl:result-document href="Recettes.html" format="my-output">
+        <xsl:result-document href="pages_HTML/Recettes.html" format="my-output">
             <html>
                 <body>
                     <xsl:call-template name="menu"/>
@@ -32,7 +32,7 @@
         </xsl:result-document>
 
 
-        <xsl:result-document href="Ingredients.html" format="my-output">
+        <xsl:result-document href="pages_HTML/Ingredients.html" format="my-output">
             <html>
                 <body>
                     <xsl:call-template name="menu"/>
@@ -42,7 +42,7 @@
             </html>
         </xsl:result-document>
 
-        <xsl:result-document href="Auteurs.html" format="my-output">
+        <xsl:result-document href="pages_HTML/Auteurs.html" format="my-output">
             <html>
                 <body>
                     <xsl:call-template name="menu"/>
@@ -52,7 +52,7 @@
             </html>
         </xsl:result-document>
 
-        <xsl:result-document href="Produits.html" format="my-output">
+        <xsl:result-document href="pages_HTML/Produits.html" format="my-output">
             <html>
                 <body>
                     <xsl:call-template name="menu"/>
@@ -62,7 +62,7 @@
             </html>
         </xsl:result-document>
 
-        <xsl:result-document href="Categories.html" format="my-output">
+        <xsl:result-document href="pages_HTML/Categories.html" format="my-output">
             <html>
                 <body>
                     <xsl:call-template name="menu"/>

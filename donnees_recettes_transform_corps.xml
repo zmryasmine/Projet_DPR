@@ -3,15 +3,9 @@
         <recette id="gateau">
             <nom/>
             <resume/>
-            <ingredients>
-                <ref-ingredient ref="" quantite=""/>
-            </ingredients>
-            <sous-categorie>
-                <ref-souscategorie ref=""/>
-            </sous-categorie>
-            <auteur>
-                <ref-auteur ref=""/>
-            </auteur>
+            <ref-ingredient ref="" quantite=""/>
+            <ref-souscategorie ref=""/>
+            <ref-auteur ref=""/>
             <photo/>
             <date_publication/>
             <difficulté/>

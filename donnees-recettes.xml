@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <objets>
 	<objet id="REC2015" type="Cuisine">
-		<info nom="nom" value="Ôdélices : Recettes de cuisine faciles et originales "/>
+		<info nom="nom" value="Recettes de cuisine faciles et originales "/>
 		<info nom="nom-court" value="Recettes"/>
 		<info nom="identificateur" value="REC2016-Odelices"/>
 		<info nom="mots-clefs" value="recettes"/>
@@ -23,9 +23,9 @@
 		<info nom="mots-clefs" value="viandes"/>
 		<info nom="mots-clefs" value="pâtes"/>
 		<info nom="mots-clefs" value=" poissons"/>
-		<info nom="responsables" value="Tombini"/>
+		<info nom="responsables" value="GOUMAIDI Kawthar et ZEMMOURI Yasmine"/>
 		<info nom="date-CA" value="2002-11-19 00:00:00"/>
-		<info nom="date-publication" value="2014-10-17 18:17:57"/>
+		<info nom="date-publication" value="2024-02-04 18:17:57"/>
 		<info nom="catégorie" value="entrées"/>
 		<info nom="catégorie" value="recettes-classiques"/>
 		<info nom="catégorie" value="boissons"/>
