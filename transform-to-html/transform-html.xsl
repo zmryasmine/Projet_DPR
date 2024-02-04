@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
+
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <!-- Définir le format de sortie nommé -->
+    <!-- Définition du format de sortie : page HTML-->
     <xsl:output name="my-output" method="html" indent="yes" encoding="iso-8859-1"/>
 
+    <!-- Inclure les différentes feuilles XSLX qui continnent les templates propres à chacuns-->
     <xsl:include href="template-categorie.xsl"/>
     <xsl:include href="template-auteur.xsl"/>
     <xsl:include href="template-ingredient.xsl"/>
@@ -15,7 +17,8 @@
         <xsl:result-document href="pages_HTML/index.html" format="my-output">
             <html>
                 <body>
-                    <h1>Bienvenue sur le site de recettes de cuisine</h1>
+                    <h1>Bienvenue sur le site de recettes de cuisine :</h1>
+                    <h2>Réalisé par GOUMAIDI Kawthar et ZEMMOURI Yasmine</h2>
                     <xsl:call-template name="menu"/>
                 </body>
             </html>
@@ -30,7 +33,6 @@
                 </body>
             </html>
         </xsl:result-document>
-
 
         <xsl:result-document href="pages_HTML/Ingredients.html" format="my-output">
             <html>
@@ -74,36 +76,27 @@
 
     </xsl:template>
 
+    <!-- Template du menu statique, présent à chaque page -->
     <xsl:template name="menu">
     <nav>
         <ul>
             <li>
-            <a href="Recettes.html">
-                 Nos Recettes
-            </a></li>
-      <li>
-                            <a href="Ingredients.html">
-                                Ingrédients utilisés dans nos recettes
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Auteurs.html">
-                                Nos plus belle plumes
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Categories.html">
-                                Catégories de recettes
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Produits.html">
-                                Nos Produits
-                            </a>
-                        </li>
+                <a href="Recettes.html"> Nos Recettes</a>
+            </li>
+            <li>
+                <a href="Ingredients.html"> Ingrédients utilisés dans nos recettes </a>
+            </li>
+            <li>
+                <a href="Auteurs.html"> Nos plus belles plumes </a>
+            </li>
+            <li>
+                <a href="Categories.html"> Catégories de recettes </a>
+            </li>
+            <li>
+                <a href="Produits.html"> Nos Produits </a>
+            </li>
         </ul>
     </nav>
 </xsl:template>
-
 
 </xsl:stylesheet>

@@ -24,9 +24,7 @@
             <apport_nutritif/>
             <saison/>
             <descriptif/>
-            <recettes>
-                <ref-recette ref=""/>
-            </recettes>
+            <ref-recette ref=""/>
         </ingredient>
     </ingredients>
     <auteurs>
@@ -37,9 +35,7 @@
             <pays/>
             <genre/>
             <bio/>
-            <recettes>
-                <ref-recette ref="gateau"/>
-            </recettes>
+            <ref-recette ref="gateau"/>
         </auteur>
     </auteurs>
     <categories>
@@ -53,19 +49,14 @@
             <nom/>
             <description/>
             <nb_recette/>
-            <categorie>
-                <ref-categorie ref=""/>
-            </categorie>
+            <ref-categorie ref=""/>
         </sous-categorie>
     </sous-categories>
     <produits>
         <produit id="">
             <nom/>
-            <ingredients>
-                <ref-ingredient ref=""/>
-            </ingredients>
+            <ref-ingredient ref=""/>
         </produit>
-
     </produits>
 </site>
 

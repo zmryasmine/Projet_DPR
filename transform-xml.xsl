@@ -1,10 +1,9 @@
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> <xsl:output method="xml" indent="yes" />
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+    <xsl:output method="xml" indent="yes" />
 
     <xsl:template match="/">
-        <site xmlns:xsi=
-                       "http://www.w3.org/2001/XMLSchema-instance"
-               xsi:noNamespaceSchemaLocation="donnees_recettes_transform.xsd">
+        <site xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="donnees_recettes_transform.xsd">
             <xsl:call-template name="liste-recettes"/>
             <xsl:call-template name="liste-ingredients"/>
             <xsl:call-template name="liste-auteurs"/>
@@ -13,8 +12,6 @@
             <xsl:call-template name="liste-produits"/>
         </site>
     </xsl:template>
-
-
 
     <xsl:template name="liste-recettes">
         <recettes>
