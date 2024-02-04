@@ -18,8 +18,8 @@
             <html>
                 <body>
                     <h1>Bienvenue sur le site de recettes de cuisine :</h1>
-                    <h2>Réalisé par GOUMAIDI Kawthar et ZEMMOURI Yasmine</h2>
                     <xsl:call-template name="menu"/>
+                    <h2>Réalisé par GOUMAIDI Kawthar et ZEMMOURI Yasmine</h2>
                 </body>
             </html>
         </xsl:result-document>
