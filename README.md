@@ -6,11 +6,10 @@
 
 ### <span style="color: #85BDB5"> Introduction
 
-Ce projet vise à créer un site web statique de recettes de cuisine en utilisant des transformations XSLT 2.0. Le site 
-comprend des pages pour l'accueil, les recettes, les ingrédients, les auteurs, les catégories, les produits, et les 
-sous-catégories. En plus des transformations XSLT, ce projet inclut également la création d'un schéma XML pour les données
-du site. Les instructions suivantes détaillent les étapes pour réaliser ces transformations.
-
+Ce projet combine l'utilisation de transformations XSLT 2.0 et XQuery pour créer un site web statique de recettes de 
+cuisine. Les pages HTML sont générées à partir des données XML, avec des fonctionnalités telles que la liste des recettes,
+des ingrédients, des auteurs, etc. Le schéma XML assure la conformité des données. En outre, une requête XQuery produit 
+une page XHTML listant les auteurs avec leurs recettes et les sous-catégories associées.
 ### <span style="color: #85BDB5"> Organisation des Fichiers
 
 - **Données XML :** Les données XML initiales sont stockées dans le fichier `donnees-recettes.xml`. La structure de ces 
@@ -24,6 +23,7 @@ données est conforme au schéma défini dans le fichier `donnees-recettes.dtd`.
 Ces feuilles définissent les templates spécifiques pour chaque entité (catégorie, auteur, ingrédient, produit, recette).
 - **Feuilles de Style CSS :** Les fichiers CSS pour le style des pages HTML sont regroupés dans le dossier `feuilles_css`.
 - **Fichiers de Sortie HTML :** Les pages HTML générées sont enregistrées dans le dossier `pages_HTML`.
+- **Fichiers de Sortie XQuery :** Le résultat de la requête XQuery est dans `result-Xquery.html`.
 
 ### <span style="color: #85BDB5"> Instructions pour l'Exécution
 
@@ -38,9 +38,19 @@ java -jar saxon9he.jar -xsl:transform_html.xsl -s:donnees_recettes_transform.xml
 ```
 3. **Validation avec Schéma XML :**
 - Utilisez le schéma XML `schema_recettes.xsd` pour valider le document XML transformé.
-4. **Visualisation des Pages HTML :**
+4. Exécution de la Requête XQuery:
+- Utilisez la commande suivante pour exécuter la requête XQuery :
+```bash
+java -cp saxon9he.jar net.sf.saxon.Query -q:requete-XQuery.xq -s:donnees_recettes_transform.xml -o:result-Xquery.html
+```
+5. **Visualisation des Pages HTML et XQuery :**
 - Ouvrez les fichiers HTML générés dans un navigateur web.
+- Consultez le résultat de la requête XQuery dans result-Xquery.html.
 
+### <span style="color: #85BDB5"> Étapes Spécifiques de Transformation XQuery
+
+La requête XQuery génère une page XHTML listant les auteurs avec leurs recettes et les sous-catégories associées. 
+Les résultats sont triés. La requête utilise explicitement les fonctionnalités offertes par XPath 2.0.
 
 ### <span style="color: #85BDB5"> Arborescence des Pages HTML
 
