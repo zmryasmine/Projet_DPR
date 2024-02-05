@@ -3,7 +3,7 @@
     <xsl:output method="xml" indent="yes" />
 
     <xsl:template match="/">
-        <site xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="donnees_recettes_transform.xsd">
+        <site xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema_recette.xsd">
             <xsl:call-template name="liste-recettes"/>
             <xsl:call-template name="liste-ingredients"/>
             <xsl:call-template name="liste-auteurs"/>

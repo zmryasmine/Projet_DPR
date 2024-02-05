@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:noNamespaceSchemaLocation="donnees_recettes_transform.xsd">
+      xsi:noNamespaceSchemaLocation="schema_recette.xsd">
    <recettes>
       <recette id="r2830">
          <nom>Cake à la tomate farcie</nom>
