@@ -7,7 +7,9 @@ declare namespace html = "http://www.w3.org/1999/xhtml";
    Prenez soin de trier tous les résultats.
  :)
 <html>
-    <head></head>
+    <head>
+        <link rel="stylesheet" href="transform-to-html/feuilles_css/xquery.css"/>
+    </head>
     <body>
         <nav>
                  <ul>
