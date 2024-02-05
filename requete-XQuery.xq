@@ -9,6 +9,18 @@ declare namespace html = "http://www.w3.org/1999/xhtml";
 <html>
     <head></head>
     <body>
+        <nav>
+                 <ul>
+                    <li><a href="transform-to-html/pages_HTML/index.html"> Acceuil</a></li>
+                    <li><a href="transform-to-html/pages_HTML/Recettes.html"> Nos Recettes</a></li>
+                    <li><a href="transform-to-html/pages_HTML/Ingredients.html"> Ingrédients utilisés dans nos recettes </a></li>
+                    <li><a href="transform-to-html/pages_HTML/Auteurs.html"> Nos plus belles plumes </a></li>
+                    <li><a href="transform-to-html/pages_HTML/Categories.html"> Catégories de recettes </a></li>
+                    <li><a href="transform-to-html/pages_HTML/Produits.html"> Nos Produits </a></li>
+                    <li><a href="result-XQuery.html"> XQuery </a></li>
+                 </ul>
+              </nav>
+         <h1> Nos Auteurs : </h1>
         <ul>
         {
         for $auteur in doc("donnees_recettes_transform.xml")//auteur
