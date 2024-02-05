@@ -16,16 +16,22 @@
         <!-- Appel aux différents templates pour produire les fichiers de sortie -->
         <xsl:result-document href="pages_HTML/index.html" format="my-output">
             <html>
+                <head>
+                    <link rel="stylesheet" href="../feuilles_css/index.css"/>
+                </head>
                 <body>
-                    <h1>Bienvenue sur le site de recettes de cuisine :</h1>
                     <xsl:call-template name="menu"/>
                     <h2>Réalisé par GOUMAIDI Kawthar et ZEMMOURI Yasmine</h2>
+                    <h1>Bienvenue sur le site de recettes de cuisine :</h1>
                 </body>
             </html>
         </xsl:result-document>
 
         <xsl:result-document href="pages_HTML/Recettes.html" format="my-output">
             <html>
+                <head>
+                    <link rel="stylesheet" href="../feuilles_css/recettes.css"/>
+                </head>
                 <body>
                     <xsl:call-template name="menu"/>
                     <xsl:call-template name="liste-des-recettes"/>
@@ -36,6 +42,9 @@
 
         <xsl:result-document href="pages_HTML/Ingredients.html" format="my-output">
             <html>
+                <head>
+                    <link rel="stylesheet" href="../feuilles_css/ingredients.css"/>
+                </head>
                 <body>
                     <xsl:call-template name="menu"/>
                     <xsl:call-template name="liste-des-ingredients"/>
@@ -46,6 +55,9 @@
 
         <xsl:result-document href="pages_HTML/Auteurs.html" format="my-output">
             <html>
+                <head>
+                    <link rel="stylesheet" href="../feuilles_css/auteurs.css"/>
+                </head>
                 <body>
                     <xsl:call-template name="menu"/>
                     <xsl:call-template name="auteur-recettes-facile"/>
@@ -57,6 +69,9 @@
 
         <xsl:result-document href="pages_HTML/Produits.html" format="my-output">
             <html>
+                <head>
+                    <link rel="stylesheet" href="../feuilles_css/produits.css"/>
+                </head>
                 <body>
                     <xsl:call-template name="menu"/>
                     <xsl:call-template name="liste-des-produits"/>
@@ -67,6 +82,9 @@
 
         <xsl:result-document href="pages_HTML/Categories.html" format="my-output">
             <html>
+                <head>
+                    <link rel="stylesheet" href="../feuilles_css/categories.css"/>
+                </head>
                 <body>
                     <xsl:call-template name="menu"/>
                     <xsl:call-template name="liste-des-categories"/>
@@ -81,6 +99,9 @@
     <xsl:template name="menu">
     <nav>
         <ul>
+            <li>
+                <a href="index.html"> Acceuil</a>
+            </li>
             <li>
                 <a href="Recettes.html"> Nos Recettes</a>
             </li>
