@@ -117,6 +117,9 @@
             <li>
                 <a href="Produits.html"> Nos Produits </a>
             </li>
+            <li>
+                <a href="../../result-XQuery.html"> Acceuil</a>
+            </li>
         </ul>
     </nav>
 </xsl:template>

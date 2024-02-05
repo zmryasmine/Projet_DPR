@@ -1,47 +1,56 @@
-xquery version "3.1";
-
+xquery version "1.0" encoding "utf-8";
 declare namespace html = "http://www.w3.org/1999/xhtml";
-(: Rédiger une requête XQuery permettant de produire une page XHTML qui liste les auteurs  avec :
+
+(: Rédiger une requête XQuery permettant de produire une page XHTML qui liste les auteurs
+   avec :
    pour chacun, les recettes qu’il a proposées et les sous-catégories dans lesquelles les recettes apparaissent.
    Prenez soin de trier tous les résultats.
  :)
-let $data := doc("donnees_recettes_transform.xml")
-
-
-return
 <html>
-  <head>
-    <title>Liste des auteurs</title>
-  </head>
-  <body>
-    <h1>Liste des auteurs</h1>
-    {
-      for $auteur in distinct-values($data//auteur)
-      order by $auteur
-      return
-      <div>
-        <h2>{$auteur}</h2>
-        <h3>Recettes proposées :</h3>
+    <head></head>
+    <body>
         <ul>
-          {
-            for $recette in $data//recette[ref-auteur = $auteur]
-            order by $recette/nom
-            return
-            <li>
-              {$recette/nom}
-              <h4>Sous-catégories :</h4>
-              <ul>
+        {
+        for $auteur in doc("donnees_recettes_transform.xml")//auteur
+        order by $auteur
+        return
+
+            <div id="{$auteur/@id}">
+                <li>
+                <a href="Auteurs.html{$auteur/@id}">{$auteur/concat(prenom/text(), ' ', nom/text())}</a>
+                <p>Ses Recettes :
+                <ul>
                 {
-                  for $souscategorie in $recette/ref-souscategorie
-                  order by $souscategorie
-                  return
-                  <li>{$data//sous-categories/sous-categorie[@id = $souscategorie]/nom}</li>
+                    for $idr in $auteur/ref-recette/@ref
+                    return
+                        for $recette in doc("donnees_recettes_transform.xml")//recette
+                        where $recette/@id = $idr
+                        return
+
+                            <li>
+                            <a href="Recettes.html#{$idr}">{$recette/nom/text()}</a>
+                            <ul>
+                                <li>
+                                {
+                                   for $cate in distinct-values($recette[@id=$idr]/ref-souscategorie/@ref)
+                                   return
+                                  <p> Sous-catégorie : <a href="Categories.html#{$cate}">{//sous-categorie[@id=$cate]/nom/text()}</a>
+                                   </p>
+                                }
+                                </li>
+
+                            </ul>
+
+                            </li>
+
+
                 }
-              </ul>
+                </ul>
+                </p>
             </li>
-          }
+            </div>
+
+            }
         </ul>
-      </div>
-    }
-  </body>
+    </body>
 </html>
