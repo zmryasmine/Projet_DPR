@@ -57,17 +57,11 @@ ul {
 /* Style pour les liens */
 a {
     text-decoration: none;
-    color: #007BFF;
+    color: rgba(106, 58, 35, 0.8);
 }
 
 a:hover {
-    text-decoration: underline;
-}
-
-/* Style pour les images */
-img {
-    max-width: 100%;
-    height: auto;
+    font-style: italic;;
 }
 
 /* Style pour les paragraphes */
@@ -75,16 +69,14 @@ p {
     margin-bottom: 10px;
 }
 
-/* Style pour les listes à puces */
-ul {
-    margin-top: 0;
-    margin-bottom: 20px;
-}
 
 /* Style pour les éléments de liste à puces */
 li {
     margin-bottom: 5px;
+    list-style-type: disc;
+    margin-left: 30px;
 }
+
 
 /* Style pour les sections de fiche des recettes */
 .auteur-container {
