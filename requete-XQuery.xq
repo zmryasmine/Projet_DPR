@@ -68,3 +68,7 @@ declare namespace html = "http://www.w3.org/1999/xhtml";
         </ul>
     </body>
 </html>
+
+(:
+java -cp saxon9he.jar net.sf.saxon.Query -q:requete-XQuery.xq -s:donnees_recettes_transform.xml -o:result-Xquery.html
+:)
