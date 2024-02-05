@@ -44,6 +44,7 @@ body {
 
 /* Style pour les titres h1 et h2 */
 h1, h2 {
+    margin-top: 100px;
     color: #333;
 }
 
