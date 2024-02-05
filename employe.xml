@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employes>
+    <employe>
+        <nom>
+            Dupond
+        </nom>
+        <prenom>
+            Albert
+        </prenom>
+        <date_naissance>
+            23/09/1958
+        </date_naissance>
+    </employe>
+    <employe>
+        <nom>
+            Dupond
+        </nom>
+        <prenom>
+            Alphonse
+        </prenom>
+        <date_naissance>
+            23/09/1975
+        </date_naissance>
+    </employe>
+    <employe>
+        <nom>
+            Dupond
+        </nom>
+        <prenom>
+            Alphonse
+        </prenom>
+        <date_naissance>
+            23/12/1975
+        </date_naissance>
+    </employe>
+    <employe>
+        <nom>
+            Dupond
+        </nom>
+        <prenom>
+            Isabelle
+        </prenom>
+        <date_naissance>
+            12/03/1967
+        </date_naissance>
+    </employe>
+</employes>
