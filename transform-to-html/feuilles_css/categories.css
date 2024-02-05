@@ -48,7 +48,7 @@ nav ul li a:hover {
     margin-top: 100px;
     font-family: 'Georgia', serif; /* Ajout de la police Georgia */
     overflow-y: auto; /* Ajout de la propriété pour activer la barre de défilement verticale */
-    max-height: calc(100% - 100px);
+    max-height: calc(90% - 100px);
 }
 
 /* Style pour la liste de recettes dans la barre latérale */
@@ -102,12 +102,6 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-/* Style pour les images */
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 /* Style pour les paragraphes */
