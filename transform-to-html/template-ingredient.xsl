@@ -17,7 +17,7 @@
     </xsl:template>
 
     <xsl:template name="fiche-des-ingredients">
-        <div class="recipe-container">
+        <div class="ingredient-container">
             <h1>Fiche de nos ingrédients</h1>
             <ul>
                 <xsl:for-each select="//ingredient">
