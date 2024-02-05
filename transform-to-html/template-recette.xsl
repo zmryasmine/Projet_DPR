@@ -66,7 +66,7 @@
                         <strong>Temps de repos :</strong> <xsl:value-of select="temps_repos"/>
                     </p>
                     <p>
-                        <strong>Difficulté : :</strong> <xsl:value-of select="difficulté"/>
+                        <strong>Difficulté : </strong> <xsl:value-of select="difficulté"/>
                     </p>
                     <p>
                         <!-- Liste des ingrédients de cette recette-->

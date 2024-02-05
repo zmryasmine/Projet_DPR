@@ -13,42 +13,40 @@
             </xs:sequence>
             <xs:attribute ref="xsi:noNamespaceSchemaLocation" use="required"/>
         </xs:complexType>
+
+        <!-- Les keyref sont déclarées dans un ancetre de chaque élément : l'élément <site> -->
+        <!-- Clé étrangère de ref-recette de auteur (clé primaire = recette/@id) -->
         <xs:keyref name="refRecetteKeyRef" refer="recetteKey">
             <xs:selector xpath="auteurs/auteur/ref-recette"/>
             <xs:field xpath="@ref"/>
         </xs:keyref>
+        <!-- Clé étrangère de ref-ingrédient de recette (clé primaire = ingrédient/@id) -->
         <xs:keyref name="refIngredientRecetteKeyRef" refer="ingredientKey">
             <xs:selector xpath="recettes/recette/ref-ingredient"/>
             <xs:field xpath="@ref"/>
         </xs:keyref>
+        <!-- Clé étrangère de ref-ingrédient de produit (clé primaire = produit/@id) -->
         <xs:keyref name="refIngredientProduitKeyRef" refer="ingredientKey">
             <xs:selector xpath="produits/produit/ref-ingredient"/>
             <xs:field xpath="@ref"/>
         </xs:keyref>
+        <!-- Clé étrangère de ref-auteur de recette (clé primaire = auteur/@id) -->
         <xs:keyref name="refAuteurKeyRef" refer="auteurKey">
             <xs:selector xpath="recettes/recette/ref-auteur"/>
             <xs:field xpath="@ref"/>
         </xs:keyref>
+        <!-- Clé étrangère de ref-categorie de sous-categorie (clé primaire = catgeorie/@id) -->
         <xs:keyref name="refCategorieKeyRef" refer="categorieKey">
             <xs:selector xpath="sous-categories/sous-categorie/ref-categorie"/>
             <xs:field xpath="@ref"/>
         </xs:keyref>
+        <!-- Clé étrangère de ref-souscategorie de recette (clé primaire = sous-categorie/@id) -->
         <xs:keyref name="refSousCategorieKeyRef" refer="souscategorieKey">
             <xs:selector xpath="recettes/recette/ref-souscategorie"/>
             <xs:field xpath="@ref"/>
         </xs:keyref>
-        <xs:keyref name="refProduitIngredientKeyRef" refer="ingredientKey">
-            <xs:selector xpath="produits/produit/ref-ingredient"/>
-            <xs:field xpath="@ref"/>
-        </xs:keyref>
+
     </xs:element>
-    <!--<xs:element name="recettes">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element maxOccurs="unbounded" ref="recette"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>-->
 
     <xs:element name="recettes">
         <xs:complexType>
@@ -56,6 +54,7 @@
                 <xs:element maxOccurs="unbounded" ref="recette"/>
             </xs:sequence>
         </xs:complexType>
+
         <xs:key name="recetteKey">
             <xs:selector xpath="recette"/>
             <xs:field xpath="@id"/>
@@ -108,6 +107,7 @@
                 <xs:element maxOccurs="unbounded" ref="ingredient"/>
             </xs:sequence>
         </xs:complexType>
+
         <xs:key name="ingredientKey">
             <xs:selector xpath="ingredient"/>
             <xs:field xpath="@id"/>
@@ -138,6 +138,7 @@
                 <xs:element maxOccurs="unbounded" ref="auteur"/>
             </xs:sequence>
         </xs:complexType>
+
         <xs:key name="auteurKey">
             <xs:selector xpath="auteur"/>
             <xs:field xpath="@id"/>
@@ -167,12 +168,14 @@
     <xs:element name="bio">
         <xs:complexType/>
     </xs:element>
+
     <xs:element name="categories">
         <xs:complexType>
             <xs:sequence>
                 <xs:element maxOccurs="unbounded" name="categorie" type="CategorieType"/>
             </xs:sequence>
         </xs:complexType>
+
         <xs:key name="categorieKey">
             <xs:selector xpath="categorie"/>
             <xs:field xpath="@id"/>
@@ -185,6 +188,7 @@
                 <xs:element maxOccurs="unbounded" name="sous-categorie" type="SousCategorieType"/>
             </xs:sequence>
         </xs:complexType>
+
         <xs:key name="souscategorieKey">
             <xs:selector xpath="sous-categorie"/>
             <xs:field xpath="@id"/>
@@ -198,6 +202,7 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
     <xs:element name="produit">
         <xs:complexType>
             <xs:sequence>
@@ -207,6 +212,7 @@
             <xs:attribute name="id" use="required" type="xs:NCName"/>
         </xs:complexType>
     </xs:element>
+
     <xs:element name="nom" type="xs:string"/>
     <xs:element name="p">
         <xs:complexType mixed="true">
@@ -217,6 +223,7 @@
             </xs:choice>
         </xs:complexType>
     </xs:element>
+
     <xs:element name="br">
         <xs:complexType/>
     </xs:element>

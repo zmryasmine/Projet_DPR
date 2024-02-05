@@ -48,6 +48,7 @@
             <html>
                 <body>
                     <xsl:call-template name="menu"/>
+                    <xsl:call-template name="auteur-recettes-facile"/>
                     <xsl:call-template name="liste-des-auteurs"/>
                     <xsl:call-template name="fiche-des-auteurs"/>
                 </body>
@@ -98,5 +99,23 @@
         </ul>
     </nav>
 </xsl:template>
+
+    <!-- Une clé pour retrouver facilement les recettes -->
+    <xsl:key name="recettes-by-auteur" match="recette" use="@id"/>
+
+    <!-- Liste des auteurs qui ont publié des recettes "Très facile"-->
+    <xsl:template name="auteur-recettes-facile">
+        <h1>Auteurs ayant publié des recettes très faciles :</h1>
+        <ul>
+            <!-- Pour chaque auteur, où la reference match la clé + difficulté très facile -->
+            <xsl:for-each select="//auteur[ref-recette[key('recettes-by-auteur', @ref)/difficulté='Très facile']]">
+                <li>
+                    <!-- Ajouter un lien vers la fiche de l'auteur -->
+                    <a href="Auteurs.html#{@id}"><xsl:value-of select="concat(prenom, ' ', nom)"/></a>
+                </li>
+            </xsl:for-each>
+        </ul>
+    </xsl:template>
+
 
 </xsl:stylesheet>
