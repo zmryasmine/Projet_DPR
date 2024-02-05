@@ -1,0 +1,62 @@
+<site>
+    <recettes>
+        <recette id="gateau">
+            <nom/>
+            <resume/>
+            <ref-ingredient ref="" quantite=""/>
+            <ref-souscategorie ref=""/>
+            <ref-auteur ref=""/>
+            <photo/>
+            <date_publication/>
+            <difficulté/>
+            <nbre_personnes/>
+            <temps_prep/>
+            <temps_cuisson/>
+            <temps_repos/>
+            <preparation/>
+            <note/>
+        </recette>
+    </recettes>
+    <ingredients>
+        <ingredient id="">
+            <nom/>
+            <apport_energetique/>
+            <apport_nutritif/>
+            <saison/>
+            <descriptif/>
+            <ref-recette ref=""/>
+        </ingredient>
+    </ingredients>
+    <auteurs>
+        <auteur id="">
+            <nom/>
+            <prenom/>
+            <age/>
+            <pays/>
+            <genre/>
+            <bio/>
+            <ref-recette ref="gateau"/>
+        </auteur>
+    </auteurs>
+    <categories>
+        <categorie id="">
+            <nom/>
+            <description/>
+        </categorie>
+    </categories>
+    <sous-categories>
+        <sous-categorie id="">
+            <nom/>
+            <description/>
+            <nb_recette/>
+            <ref-categorie ref=""/>
+        </sous-categorie>
+    </sous-categories>
+    <produits>
+        <produit id="">
+            <nom/>
+            <ref-ingredient ref=""/>
+        </produit>
+    </produits>
+</site>
+
